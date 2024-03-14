@@ -10,20 +10,33 @@
             padding: 0;
             height: 100%;
             font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #111627 0%, #141b2d 50%, #162032 100%);
+            color: #ffffff;
         }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
-            color: white;
-            background: linear-gradient(135deg, #0c1321 30%, #2b2957);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .box {
+            padding: 40px 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
         }
         h1 {
-            font-size: 3em;
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
         }
         @media (max-width: 768px) {
+            .box {
+                padding: 20px 40px;
+            }
             h1 {
                 font-size: 2em;
             }
@@ -33,7 +46,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>N A Fox Accountancy Ltd</h1>
+        <div class="box">
+            <h1>N A Fox Accountancy Ltd</h1>
+        </div>
     </div>
 </body>
 </html>
